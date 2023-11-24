@@ -1,0 +1,16 @@
+.table-section{
+    pa
+    height: 650px;
+    overflow: auto;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 100px;
+}
+thead th{
+    position: sticky;
+    background-color: rgb(201, 182, 184);
+    
+
+}
