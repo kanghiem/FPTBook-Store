@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="./css/manageproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <main class="table">
+    <section class="table-header" >
+        <div class="title">
+            <h1>Product list</h1>
+        </div>
+        <div class="search-box" id="search-bar">
+            <input type="text" class="search-txt" placeholder="Search products">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="add-box">
+            <a href="#">
+                <button class="add-btn">Add New</button>
+            </a>
+        </div>
+    </section>
+    <section class="table-sidebar">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="txt">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <span class="icon"><i class="fa-solid fa-tags"></i></span>
+                    <span class="txt">Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-receipt"></i></span>
+                    <span class="txt">Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-store"></i></span>
+                    <span class="txt">Category</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-regular fa-bell"></i></span>
+                    <span class="txt">Notifications</span>
+                </a>
+            </li>
+            
+
+        </ul>
+    </section>
+    <section class="table-midle">
+        
+
+    </section>
+    <section class="table-body">
+        
+    </section>
+   </main>
+   <script>
+    var searchBox=document.getElementById("search-bar");
+    var Icon=document.getElementsByClassName("search-btn")[0];
+        Icon.onclick=function(){
+            searchBox.classList.toggle("active");
+        }
+
+   </script>
+ 
+</body>
+</html>

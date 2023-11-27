@@ -1,0 +1,271 @@
+/* 
+margin: 0; 
+padding:0;
+box-sizing: border-box;
+
+*/
+section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppons',sans-serif;
+    overflow: hidden;
+    
+}
+section .table{
+    width: 100%;
+}
+/* ======== TABLE HEADER */
+section .table_header{
+    display: flex;
+   /* justify-content: left; */
+    align-items: center;
+    padding: 20px;
+    background-color: #f3e6e5;
+}
+.table_header h2{
+    color: rgb(33, 33, 66) ;
+    
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    /* padding: 10px; */
+    
+   
+}
+
+.add_new{
+    padding: 10px 20px;
+    color: whitesmoke;
+    background-color: rgb(107, 95, 95);
+    font-weight: bold;
+
+
+}
+.delete{
+    padding: 10px 20px;
+    color: whitesmoke;
+    background-color: rgb(107, 95, 95);
+    font-weight: bold;
+    
+}
+.add_new:hover{
+    background-color: rgb(87, 78, 78);
+}
+.delete:hover{
+    background-color: rgb(87, 78, 78);
+}
+.add_new:active{
+    background: rgb(161, 110, 110);
+}
+.delete:active{
+    background: rgb(161, 110, 110);
+}
+/* input{
+    padding: 10px 20px;
+    margin-left: 10px;
+} */
+.search-box{
+    padding: 15px 30px;
+    margin: 0 10px;
+    outline: none;
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(232, 215, 215, 0.3);
+    transition: all 1s ease-out;
+    /* margin-right: 10px; */
+    margin-left: 40rem; 
+}
+.search-box:hover input{
+    width: 140px;
+}
+.search-box input{
+    padding: 10px 10px;
+    margin: 0 10px;
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 200px;
+    transition: 0.8s;
+    background: transparent;
+}
+.search-box button .fas{
+    color:  rgb(107, 95, 95);
+    font-size: 20px;
+    
+
+}
+button.delete, button.add_new {
+    margin-right: 10px;
+    
+}
+/* ---------------------- END OF TABLE HEADER   ------------------------ */
+
+/* --------------- SELECT --------------------- */
+section .select{
+    /* width: 100%;
+    background: #9c7777;
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 80px auto 30px; */
+
+    display: flex;
+   justify-content: left;
+   margin-top: 10px;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(228, 218, 218);
+    position: relative;
+
+
+}
+.select-category-btn, .select-quantity-btn, .select-price-btn{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding:  10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #fff;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-shadow: 2px  rgb(223, 222, 222);
+    position: relative;
+    
+}
+    
+.select-category-btn, .select-quantity-btn, .select-price-btn .btn-text{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(33, 33, 66) ;
+}
+.select-category-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #d19292;
+    transition: 0,3s;
+    
+
+}
+.select-category-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+.select-quantity-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+.select-price-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+.select-quantity-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #d19292;
+    transition: 0,3s;
+
+}
+.select-price-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #d19292;
+    transition: 0,3s;
+
+}
+.list-items{
+    position: relative;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    display: none;
+}
+.select-category-btn.open ~ .list-items{
+    display: block;
+}
+.select-quantity-btn.open ~ .list-items{
+    display: block;
+}
+.select-price-btn.open ~ .list-items{
+    display: block;
+}
+
+.list-items .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+
+}
+.list-items .item:hover{
+    background-color: #f3e7e7;
+
+}
+.item .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(33, 33, 66) ;
+}
+.item .checkbox{
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #d19292;
+    transition: all 0.3s ease-in-out;
+
+}
+.item .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(33, 33, 66);
+}
+.checkbox .check-icon{
+    font-size: 11px;
+
+}
+.checkbox .check-icon{
+    font-size: 11px;
+    transform: scale(0);
+    color: #fff;
+
+}
+.item.checked .check-icon{
+    transform: scale(1);
+}
+.item.checked .checkbox{
+    background-color: #d19292;
+    border-color: #d19292;
+}
+/* ---------------END SELECT------------------ */
